@@ -45,8 +45,8 @@ shinyServer(
         Total.Spent = buyReport()$totalCost
         ,Total.Value = buyReport()$endValue
         ,Net.Gain = buyReport()$cashEarned
-        ,Percent.Earned = buyReport()$percentEarned
-        ,Annual.Earning = buyReport()$annualEarning
+        ,Percent.Earned = 100*buyReport()$percentEarned
+        ,Annual.Earning = 100*buyReport()$annualEarning
         )
     })
 
@@ -68,8 +68,8 @@ shinyServer(
         Total.Spent = rentReport()$totalCost
         ,Total.Value = rentReport()$totalMktEarnings
         ,Net.Gain = rentReport()$cashEarned
-        ,Percent.Earned = rentReport()$percentEarned
-        ,Annual.Earning = rentReport()$annualEarning
+        ,Percent.Earned = 100*rentReport()$percentEarned
+        ,Annual.Earning = 100*rentReport()$annualEarning
         )
     })
   }
