@@ -1,7 +1,7 @@
 # Renters:
 
 # Invest the downpayment in the market
-# Invest the monthly difference between rent
+# Invest the monthly difference between rent and mortgage into the market
 
 
 negToZero <- function(x) if (x > 0) x else 0

@@ -1,7 +1,5 @@
 library(shiny)
 
-# pageWithSidebar(headerPanel, sidebarPanel, mainPanel)
-
 shinyUI(
   fluidPage(
     headerPanel("Buying vs. Renting")
@@ -37,7 +35,7 @@ shinyUI(
 
     ,mainPanel(
       p("Compare financial outcomes of renting vs. buying in Germany."),
-      p("Adjust the figures to show realistic fincancial scenarios, and compare the outcomes in the results tables."),
+      p("Adjust the figures to show realistic financial scenarios, and compare the outcomes in the results tables."),
       tabsetPanel(
         tabPanel("Results",
         
